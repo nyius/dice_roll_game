@@ -76,12 +76,12 @@ btnRoll.addEventListener('click', async function () {
 		for (let i = 0; i < 10; i++) {
 			dice = Math.trunc(Math.random() * 6) + 1;
 			await sleep(50);
-			dice_el.src = `/dist/img/dice-${dice}.png`;
+			dice_el.src = `/img/dice-${dice}.png`;
 		}
 
 		// display the final dice to add to the score
 		dice = Math.trunc(Math.random() * 6) + 1;
-		dice_el.src = `/dist/img/dice-${dice}.png`;
+		dice_el.src = `/img/dice-${dice}.png`;
 
 		// 3. check for roll = 1.
 		if (dice !== 1) {
